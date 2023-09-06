@@ -1,0 +1,58 @@
+.about-container {
+  margin-top: 80px;
+  display: flex;
+  height: 70vh;
+  background-color: rgb(234, 230, 230);
+
+  .about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    .image-container {
+      width: 65%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .about-right {
+    flex: 1;
+
+    .text {
+        margin-top: 80px;
+        width: 80%;
+
+      h1 {
+        font-size: 2.7rem;
+        color: rgb(11, 80, 149);
+
+        .absord {
+          color: red;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        margin-block: 15px;
+      }
+
+      .btn-primary {
+        border: none;
+        margin-block: 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 12px 20px;
+        border-radius: 40px;
+        background-color: #ce2b2b;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+    }
+  }
+}
