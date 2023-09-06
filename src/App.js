@@ -10,6 +10,7 @@ import d3 from "./assets/coke.avif";
 import d4 from "./assets/momos.avif";
 import d5 from "./assets/pizzalarge.avif";
 import d6 from "./assets/frenchFries.avif";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [page, setPage] = useState(1);
@@ -72,6 +73,7 @@ function App() {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

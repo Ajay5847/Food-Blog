@@ -22,7 +22,9 @@ function Hero() {
         </div>
       </div>
       <div className="hero-right">
-        <img src={pizza} alt="Pizza" />
+        <div className="pizza-container">
+          <img src={pizza} alt="Pizza" />
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import dummy from '../../assets/pizza.jpg'
 
 function About() {
   return (
-    <div className="about-container">
+    <div className="About">
       <div className="about-left">
         <div className="image-container">
           <img src={dummy} alt="" />

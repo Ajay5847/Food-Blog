@@ -1,6 +1,5 @@
 .container {
     display: flex;
-    height: 100vh;
 
     .hero-left {
         flex: 1;
@@ -19,7 +18,6 @@
         }
 
         .tag-line {
-            height: calc(100% - 144px);
     
             .text {
                 margin-left: 70px;
@@ -57,13 +55,54 @@
 
     .hero-right {
         flex: 1;
-        
-        img {
+        .pizza-container{
             width: 100%;
-            position: relative;
             height: 100%;
-            object-fit: cover;
-            border-bottom-left-radius: 10%;
+            // // min-width: 300px;
+            // // min-height: 300px;
+            // width: 650px;
+            // height: 650px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 40%;
+                border-bottom-left-radius: 10%;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container {
+        flex-direction: column-reverse;
+
+        .hero-left {
+
+            .logo {
+                display: none;
+            }
+    
+            .tag-line {
+    
+                .text {
+                    margin: 20px 0;
+                    padding-inline: 40px;
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h1 {
+                        font-size: 2.2rem;
+
+                    }
+                }
+            }
         }
 
     }

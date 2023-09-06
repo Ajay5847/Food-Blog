@@ -1,0 +1,132 @@
+.Footer {
+    background-color: rgb(234, 230, 230);
+    margin-top: 40px;
+    
+    .footer-container {
+        display: flex;
+
+        .logo-container {
+            margin-block: 40px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .logo {
+                width: 100px;
+                height: 100px;
+        
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    
+        .contact-us {
+            margin-block: 40px;
+            flex: 1;
+            
+            .contact {
+                
+                li {
+                    margin-top: 10px;
+                    list-style: none;
+                }
+                
+            }
+        }
+        
+        .more {
+            flex: 0.7;
+            margin-block: 40px;
+            
+            .company {
+                
+                li {
+                    margin-top: 10px;
+                    list-style: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .social-links {
+            margin-block: 40px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .social-top {
+    
+                .follow {
+                    display: flex;
+                    gap: 20px;
+                    margin-top: 10px;
+        
+                    li {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.5rem;
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background-color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .Footer {
+        margin-top: 20px;
+
+        .footer-container {
+            flex-direction: column;
+            margin: 20px;
+
+            .contact-us {
+                margin-inline: 10px;
+                margin-block: 10px;
+                li {
+                    font-size: 0.8rem;
+                }
+            }
+            
+            .more {
+                margin-inline: 10px;
+                margin-block: 10px;
+                
+                li {
+                    font-size: 0.8rem;
+                }
+            }
+            
+            .social-links {
+                margin-block: 10px;
+                margin-inline: 10px;
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                
+                .social-top {
+                    h3 {
+                        display: none;
+                    }
+
+                    li {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
