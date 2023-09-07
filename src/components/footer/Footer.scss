@@ -26,6 +26,7 @@
     
         .contact-us {
             margin-block: 40px;
+            overflow: hidden;
             flex: 1;
             
             .contact {
@@ -53,11 +54,11 @@
         }
         
         .social-links {
-            margin-block: 40px;
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            padding-block: 10px;
     
             .social-top {
     

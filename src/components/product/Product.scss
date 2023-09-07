@@ -1,43 +1,66 @@
-.product-container {
+.Product {
+    cursor: pointer;
     min-width: 280px;
-    border: 1px solid rgb(215, 214, 214);
+    flex: 1;
+    flex-grow: 0;
+    align-self: stretch;
     border-radius: 20px;
-    padding: 20px;
-
-    .image-container {
-        width: 100%;
-        height: 250px;
-
-        img {
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    
+    .product-container {
+        padding: 20px;
+        .product-img{
+            position: relative;
+            height: 250px;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 20px;
+            
+            .image {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .product-info {
+            padding-block: 20px;
+
+            h3 {
+                color: rgb(11, 80, 149);
+            }
+
+            .desc {
+                margin-block: 16px;
+            }
+
+            .btn-primary {
+                border: 1px solid rgb(107, 107, 107);
+                margin-top: 15px;
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 10px 20px;
+                border-radius: 40px;
+                background-color: transparent;
+                color: rgb(114, 111, 111);
+                cursor: pointer;
+              }
+
+              .btn-primary:hover {
+                background-color: rgb(11, 80, 149);
+                color: white;
+              }
         }
     }
-
-    .text {
-        margin-block: 15px;
-        color: rgb(52, 150, 230);
-    }
-
-    p {
-        text-align: left;
-    }
-
-    .btn-primary {
-        border: 1px solid rgb(107, 107, 107);
-        margin-top: 15px;
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 40px;
-        background-color: transparent;
-        color: rgb(114, 111, 111);
-        cursor: pointer;
-      }
-
 }
 
-@media screen and (max-width: 680px) {
+.Product:hover {
+    background-color: rgba($color: #aeabab, $alpha: 0.1);
 }

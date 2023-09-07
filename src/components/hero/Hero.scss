@@ -48,6 +48,10 @@
                     color: rgb(255, 255, 255);
                     cursor: pointer;
                   }
+
+                  .btn-primary:hover {
+                    background-color: rgba($color: #fa0e0e, $alpha: 0.9);
+                  }
                   
             }
         }
@@ -88,8 +92,8 @@
             .tag-line {
     
                 .text {
-                    margin: 20px 0;
-                    padding-inline: 40px;
+                    margin: 0;
+                    padding: 60px 40px;
                     text-align: center;
                     width: 100%;
                     display: flex;

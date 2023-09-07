@@ -1,7 +1,7 @@
 .About {
   margin-top: 80px;
   display: flex;
-  height: 70vh;
+  height: 400px;
   background-color: rgb(234, 230, 230);
 
   .about-left {
@@ -23,9 +23,13 @@
 
   .about-right {
     flex: 1;
-
+    margin-block: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    
     .text {
-        margin-top: 80px;
         width: 80%;
 
       h1 {
@@ -53,6 +57,11 @@
         color: rgb(255, 255, 255);
         cursor: pointer;
       }
+
+      .btn-primary:hover {
+        background-color: rgba($color: #fa0e0e, $alpha: 0.9);
+      }
+
     }
   }
 }
@@ -66,18 +75,20 @@
 
         .about-right {
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-
+            
             .text {
-                margin: 0;
+              margin: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+
+              h1 {
+                  font-size: 2rem;
+              }
             }
 
-            h1 {
-                font-size: 2.2rem;
-            }
         }
     }
 }
