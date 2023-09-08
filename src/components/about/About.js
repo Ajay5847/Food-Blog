@@ -1,6 +1,6 @@
 import React from "react";
 import './About.scss'
-import dummy from '../../assets/pizza.jpg'
+import dummy from '../../assets/about.avif'
 
 function About() {
   return (

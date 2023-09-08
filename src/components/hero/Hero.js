@@ -5,7 +5,7 @@ import "./Hero.scss";
 
 function Hero() {
   return (
-    <div className="container">
+    <div className="Hero">
       <div className="hero-left">
         <div className="logo">
           <img src={logo} alt="logo" />
@@ -25,6 +25,7 @@ function Hero() {
         <div className="pizza-container">
           <img src={pizza} alt="Pizza" />
         </div>
+        <button className="btn-primary">Get In Touch</button>
       </div>
     </div>
   );
